@@ -20,6 +20,36 @@ body {
     background-color: #1a1a1a;
     border-bottom: 2px solid #ff6b00;
 }
+/* Hamburger caché sur desktop */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #39ff14;
+}
+
+/* Sur mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .btn-login {
+        display: none;
+    }
+}
 
 .logo {
     font-size: 24px;
